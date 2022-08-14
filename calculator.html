@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/calculator.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="leading">
+        <a href="./index.html" class="nav-link">
+          <h2>Assigment 1</h2>
+        </a>
+      </div>
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./calculator.html" class="nav-link">Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a href="./contact.html" class="nav-link">Contact Us</a>
+        </li>
+        <a href="./register.html" class="nav-link">
+          <li class="nav-item btn">Register</li>
+        </a>
+        <a href="./login.html" class="nav-link">
+          <li class="nav-item btn btn-outline">Login</li>
+        </a>
+      </ul>
+      <div class="menu-icon">
+        <i class="fa fa-bars mt-1" id="menu-icon"></i>
+      </div>
+    </nav>
+    <main>
+      <div class="container mx-auto">
+        <div class="mt-5"></div>
+        <div class="contact-box mx-auto">
+          <h1 class="text-center">Calculator using Table</h1>
+          <div class="card mt-5">
+            <table class="table" width="100%">
+              <tr>
+                <th colspan="4">
+                  <input
+                    type="number"
+                    readonly
+                    value="0"
+                    class="form-control"
+                  />
+                </th>
+              </tr>
+              <tr>
+                <td>AC</td>
+                <td>+/-</td>
+                <td>%</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>+</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>00</td>
+                <td>.</td>
+                <td>=</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="mt-5"></div>
+        <div class="contact-box mx-auto">
+          <h1 class="text-center">Calculator using Flexbox</h1>
+          <div class="card mt-5">
+            <div class="flex-cal">
+              <input type="number" readonly value="0" class="form-control" />
+              <div class="row">
+                <div>AC</div>
+                <div>+/-</div>
+                <div>%</div>
+                <div>/</div>
+              </div>
+              <div class="row">
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>X</div>
+              </div>
+              <div class="row">
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+              </div>
+              <div class="row">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+              </div>
+              <div class="row">
+                <div>0</div>
+                <div>00</div>
+                <div>.</div>
+                <div>=</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5"></div>
+      </div>
+    </main>
+    <footer>
+      <h4>&copy; 2022 | AltSchool Africa Assignment 1</h4>
+      <p>Made with love | Nwankwo Kingsley</p>
+    </footer>
+    <script>
+      document
+        .getElementById("menu-icon")
+        .addEventListener("click", function () {
+          console.log("click");
+          document.querySelector(".nav-items").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>

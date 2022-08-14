@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="leading">
+        <a href="./index.html" class="nav-link">
+          <h2>Assigment 1</h2>
+        </a>
+      </div>
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./calculator.html" class="nav-link">Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a href="./contact.html" class="nav-link">Contact Us</a>
+        </li>
+        <a href="./register.html" class="nav-link">
+          <li class="nav-item btn">Register</li>
+        </a>
+        <a href="./login.html" class="nav-link">
+          <li class="nav-item btn btn-outline">Login</li>
+        </a>
+      </ul>
+      <div class="menu-icon">
+        <i class="fa fa-bars mt-1" id="menu-icon"></i>
+      </div>
+    </nav>
+    <main>
+      <div class="container mx-auto">
+        <div class="card mt-10 bg-white">
+          <div class="about-me">
+            <div class="d-flex">
+              <div class="info">
+                <img
+                  src="https://pbs.twimg.com/profile_images/740169644997218304/kWYzsckl_400x400.jpg"
+                  alt="photo"
+                  class="photo"
+                />
+                <p class="name mt-1">Nwankwo Kingsley</p>
+                <p class="position">Backend Engineer</p>
+              </div>
+              <div class="detail">
+                <br />
+                <h1 class="text-uppercase">About Me</h1>
+                <br />
+                <br />
+                <p>
+                  I’m an enthusiastic software developer interested in providing
+                  solutions and creating value with technology. I’m a great team
+                  player and currently schooling at AltSchool Africa.
+                </p>
+                <br />
+                <p>
+                  With the AltSchool Engineering diploma, I’m equipping myself
+                  with the necessary and fundamental skills to help me create
+                  value and meet the demands in the Tech industry.
+                </p>
+                <br />
+                <p>
+                  I’m a graduate of Computer Science (Bsc.) from Michael Okpara
+                  University and looking to equip myself with more skills to be
+                  world class.
+                </p>
+                <br />
+                <p>
+                  I’m currently serving and working with SoftSmart Solutions
+                  where I work with an amazing team.
+                </p>
+                <br />
+                <p>
+                  My Hobbies are Programming, Swimming, Football and playing
+                  Video Games.
+                </p>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h4>&copy; 2022 | AltSchool Africa Assignment 1</h4>
+      <p>Made with love | Nwankwo Kingsley</p>
+    </footer>
+    <script>
+      document
+        .getElementById("menu-icon")
+        .addEventListener("click", function () {
+          console.log("click");
+          document.querySelector(".nav-items").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>
